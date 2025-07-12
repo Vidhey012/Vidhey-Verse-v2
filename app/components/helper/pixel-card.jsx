@@ -140,9 +140,17 @@ export default function PixelCard({
   const pixelsRef = useRef([]);
   const animationRef = useRef(null);
   const timePreviousRef = useRef(performance.now());
-  const reducedMotion = useRef(
-    window.matchMedia("(prefers-reduced-motion: reduce)").matches
-  ).current;
+  // const reducedMotion = useRef(
+  //   window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  // ).current;
+
+  const reducedMotion = useRef(false);
+
+useEffect(() => {
+  if (typeof window !== "undefined") {
+    reducedMotion.current = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }
+}, []);
 
   const variantCfg = VARIANTS[variant] || VARIANTS.default;
   const finalGap = gap ?? variantCfg.gap;
