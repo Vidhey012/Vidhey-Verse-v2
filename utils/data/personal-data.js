@@ -14,7 +14,7 @@ export const personalData = {
   linkedIn: 'https://www.linkedin.com/in/bhogadi-vidhey-aa62b71a8/',
   twitter: 'https://x.com/name_is_vidhey',  
   instagram: 'https://www.instagram.com/b_vidhey/',
-  resume: "https://github.com/Vidhey012/Resume/blob/main/Resume_ATSFREE.pdf",
+  resume: "https://github.com/Vidhey012/Resume/blob/main/Vidhey_SDE_Resume.pdf",
   devUsername: "vidhey071",
   mediumUsername: "vidheywebsites"
 }
